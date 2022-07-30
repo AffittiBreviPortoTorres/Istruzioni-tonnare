@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+@import url(https://necolas.github.io/normalize.css/);
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: white;
+    height: 110px;
+    padding: 0;
+    width: 98%;
+    position: fixed;
+    top: 0px;
+}
+
+.logo{
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.logo img{
+    width: 300px;
+    height: auto;
+
+}
+
+nav{
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.lang-menu{
+    margin-top: 25px;
+    position: relative;
+}
+
+.selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    width: 100px;
+}
+
+.selected-lang:before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../media/1x1/es.svg);
+}
+
+.lang-menu ul{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: opx 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    border: 1px solid #e2007a;
+}
+
+.lang-menu ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a{
+    width: 140px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.lang-menu ul li a::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.lang-menu ul li a:hover{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border: 1px solid #003293;
+}
+
+.it:before{
+    background-image: url(../media/1x1/it.svg);
+}
+
+.en:before{
+    background-image: url(../media/1x1/gb.svg);
+}
+
+.fr:before{
+    background-image: url(../media/1x1/fr.svg);
+}
+
+.es:before{
+    background-image: url(../media/1x1/es.svg);
+}
+
+.de:before{
+    background-image: url(../media/1x1/de.svg);
+}
+
+.lang-menu:hover ul{
+display: block;
+}
+
+#andata{
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+    font-size: xx-large;
+    color: #e2007a;
+}
+
+iframe{
+    margin: auto;
+    display: block;
+    width: 560px;
+    height: 315px;
+}
+
+#video{
+    margin-top: 40px;
+}
+
+#d-uno{
+    width:65%;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+footer {
+    background-color: #e2007a;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    
+  }
+
+  footer a {
+
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+@media screen and (max-width:720px) {
+
+    nav{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    iframe{
+        width: 460px;
+    }
+
+    .logo{
+        width: 250px;
+        margin-top: 10px;
+        
+    }
+    
+    .logo img{
+        width: 250px;
+        
+    }
+
+    .lang-menu ul{
+        width: max-content;
+        left:-30px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width:480px) {
+
+    .logo{
+        width: 190px;
+        margin-top: 15px;
+        
+    }
+    
+    .logo img{
+        width: 190px;
+    }
+
+
+    iframe{
+        width: 360px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    iframe{
+        width: 260px;
+        height: 280px;
+    }
+
+    #andata{
+        font-size: x-large;
+    }
+
+    #d-uno{
+        font-size: medium;
+    }
+
+}
